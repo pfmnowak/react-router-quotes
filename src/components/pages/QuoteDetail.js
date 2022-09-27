@@ -21,7 +21,11 @@ const QuoteDetail = () => {
   const quote = DUMMY_QUOTES.find((quote) => quote.id === params.quoteId);
 
   if (!quote) {
-    return <p>No quote found!</p>;
+    return (
+      <div className="centered">
+        <p>No quote found!</p>
+      </div>
+    );
   }
 
   return (

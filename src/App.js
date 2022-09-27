@@ -3,6 +3,7 @@ import Comments from "./components/comments/Comments";
 import Layout from "./components/layout/Layout";
 import AllQuotes from "./components/pages/AllQuotes";
 import NewQuote from "./components/pages/NewQuote";
+import NotFound from "./components/pages/NotFound";
 import QuoteDetail from "./components/pages/QuoteDetail";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/quotes/:quoteId/comments" element={<Comments />} />
         </Route>
         <Route path="/new-quote" element={<NewQuote />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
   );
